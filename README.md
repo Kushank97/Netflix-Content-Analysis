@@ -24,11 +24,6 @@ Handled messy real-world data with:
 
 Inconsistent duration formats (e.g., "93 min" vs. "4 Seasons") → Extracted numeric values using regex:
 
-python
-# Convert durations to numeric
-data['Duration'] = data['Duration'].str.extract('(\d+)').astype(float)
-Multi-value country entries → Split and analyzed primary production countries
-
 2. Key Analyses
 Analysis	Insight	Tool Used
 Content Type Distribution	70% Movies, 30% TV Shows	Pandas, Matplotlib
